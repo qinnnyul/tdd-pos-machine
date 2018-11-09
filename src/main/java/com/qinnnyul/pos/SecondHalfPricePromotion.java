@@ -1,11 +1,11 @@
 package com.qinnnyul.pos;
 
-public class SecondHalfPricePromotion {
+public class SecondHalfPricePromotion extends ShoppingItem {
 
     private ShoppingItem shoppingItem;
 
     public SecondHalfPricePromotion(ShoppingItem shoppingItem) {
-
+        super(shoppingItem.getName(), shoppingItem.getPrice(), shoppingItem.getAmount());
         this.shoppingItem = shoppingItem;
     }
 
