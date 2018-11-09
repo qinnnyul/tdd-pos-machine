@@ -15,7 +15,11 @@ public class PosMachine {
                 .map(shoppingItem -> promotionStrategies.discount(shoppingItem))
                 .map(ShoppingItem::cost).reduce(0d, (cost, cost2) -> cost + cost2);
 
+        Double orignalPrice = shoppingCart.getShoppingItemList().stream()
+                .map(ShoppingItem::cost).reduce(0d, (cost, cost2) -> cost + cost2);
+
         recipit.setTotalPrice(totalPrice);
+        recipit.setOriginalTotalPrice(orignalPrice);
 
         return recipit;
     }
