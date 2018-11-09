@@ -1,4 +1,4 @@
-package com.qinnnyul.pos;
+package com.qinnnyul.pos.promotion;
 
 import com.qinnnyul.pos.domain.ShoppingItem;
 import com.qinnnyul.pos.promotion.DiscountPromotion;

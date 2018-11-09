@@ -2,7 +2,7 @@ package com.qinnnyul.pos.parser;
 
 import com.qinnnyul.pos.domain.Product;
 
-public class ProductParser extends Parser{
+public class ProductParser extends Parser<Product> {
 
     @Override
     public Product convert(String line) {

@@ -17,9 +17,9 @@ public class ShoppingCartParserTest {
         List<ShoppingCartItem> shoppingCartItemList = shoppingCartParser.parse("cart.txt");
 
 
-        assertThat(shoppingCartItemList.size(), is(7));
+        assertThat(shoppingCartItemList.size(), is(3));
         assertThat(shoppingCartItemList.get(0).getName(), is("ITEM000001"));
-        assertThat(shoppingCartItemList.get(0).getAmount(), is(1d));
+        assertThat(shoppingCartItemList.get(0).getAmount(), is(5d));
 
     }
 }
