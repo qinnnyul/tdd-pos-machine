@@ -12,6 +12,10 @@ public class SecondHalfPricePromotion extends ShoppingItem {
     }
 
     public double cost() {
-        return (this.shoppingItem.getAmount() + 1) * this.shoppingItem.getPrice() * 0.5;
+        if (this.shoppingItem.getAmount() % 2 == 0) {
+            return this.shoppingItem.getPrice() * (this.shoppingItem.getAmount() / 2 * 1.5);
+        } else {
+            return this.shoppingItem.getPrice() * ((this.shoppingItem.getAmount() + 1) / 2 + (this.shoppingItem.getAmount() - 1) / 2 * 0.5);
+        }
     }
 }

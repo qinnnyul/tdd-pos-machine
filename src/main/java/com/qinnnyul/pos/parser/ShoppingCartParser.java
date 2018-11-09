@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 
 public class ShoppingCartParser extends Parser<ShoppingCartItem> {
 
-
     @Override
     public List<ShoppingCartItem> parse(String fileName) {
         List<ShoppingCartItem> shoppingCartItems = super.parse(fileName);

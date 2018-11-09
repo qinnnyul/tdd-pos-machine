@@ -5,6 +5,8 @@ import com.qinnnyul.pos.domain.ShoppingCart;
 import com.qinnnyul.pos.domain.ShoppingItem;
 
 public class PosMachine {
+
+
     public Recipit checkout(ShoppingCart shoppingCart) {
         Recipit recipit = new Recipit();
 
