@@ -1,5 +1,6 @@
 package com.qinnnyul.pos.parser;
 
+import com.qinnnyul.pos.domain.Product;
 import org.junit.Test;
 
 import java.util.List;

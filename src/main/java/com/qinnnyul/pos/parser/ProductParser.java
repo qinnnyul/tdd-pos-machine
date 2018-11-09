@@ -1,5 +1,7 @@
 package com.qinnnyul.pos.parser;
 
+import com.qinnnyul.pos.domain.Product;
+
 public class ProductParser extends Parser{
 
     @Override

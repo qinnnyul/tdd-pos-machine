@@ -1,4 +1,4 @@
-package com.qinnnyul.pos;
+package com.qinnnyul.pos.domain;
 
 public class ShoppingItem {
     private String name;

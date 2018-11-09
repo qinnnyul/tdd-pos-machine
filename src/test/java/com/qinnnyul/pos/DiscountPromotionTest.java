@@ -1,5 +1,7 @@
 package com.qinnnyul.pos;
 
+import com.qinnnyul.pos.domain.ShoppingItem;
+import com.qinnnyul.pos.promotion.DiscountPromotion;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;

@@ -1,4 +1,6 @@
-package com.qinnnyul.pos;
+package com.qinnnyul.pos.promotion;
+
+import com.qinnnyul.pos.domain.ShoppingItem;
 
 public class DiscountPromotion extends ShoppingItem {
     private ShoppingItem shoppingItem;

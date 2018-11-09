@@ -1,4 +1,4 @@
-package com.qinnnyul.pos.parser;
+package com.qinnnyul.pos.domain;
 
 public class DiscountItem {
     private String name;
