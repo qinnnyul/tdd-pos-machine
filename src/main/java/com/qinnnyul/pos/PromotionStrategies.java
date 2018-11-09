@@ -11,7 +11,7 @@ import com.qinnnyul.pos.promotion.SecondHalfPricePromotion;
 import java.util.List;
 import java.util.Optional;
 
-public class PosConfigParser {
+public class PromotionStrategies {
 
     List<DiscountItem> discountItems = new DiscountPromotionParser().parse("discount_promotion.txt");
 

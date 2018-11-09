@@ -6,13 +6,13 @@ import com.qinnnyul.pos.domain.ShoppingItem;
 
 public class PosMachine {
 
-    private PosConfigParser posConfigParser = new PosConfigParser();
+    private PromotionStrategies promotionStrategies = new PromotionStrategies();
 
     public Recipit checkout(ShoppingCart shoppingCart) {
         Recipit recipit = new Recipit();
 
         Double totalPrice = shoppingCart.getShoppingItemList().stream()
-                .map(shoppingItem -> posConfigParser.discount(shoppingItem))
+                .map(shoppingItem -> promotionStrategies.discount(shoppingItem))
                 .map(ShoppingItem::cost).reduce(0d, (cost, cost2) -> cost + cost2);
 
         recipit.setTotalPrice(totalPrice);
