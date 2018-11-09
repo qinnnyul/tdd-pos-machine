@@ -13,8 +13,7 @@ public class PosMachineTest {
 
         ShoppingCart shoppingCart = new ShoppingCart();
 
-        SecondHalfPricePromotion secondHalfPricePromotion = new SecondHalfPricePromotion(new ShoppingItem("ITEM000001", 40d, 2));
-        DiscountPromotion discountPromotion = new DiscountPromotion(secondHalfPricePromotion, 75d);
+        DiscountPromotion discountPromotion = new DiscountPromotion(new SecondHalfPricePromotion(new ShoppingItem("ITEM000001", 40d, 2)), 75d);
         shoppingCart.add(discountPromotion);
 
 
